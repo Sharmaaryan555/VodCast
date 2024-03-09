@@ -7,42 +7,42 @@ import com.example.vodcast.databinding.ActivitySignInAndRegistrationBinding
 
 
 class SignInAndRegistrationActivity : AppCompatActivity() {
-   private val binding:ActivitySignInAndRegistrationBinding by lazy {
-       ActivitySignInAndRegistrationBinding.inflate(layoutInflater)
-   }
+    private val bindings:ActivitySignInAndRegistrationBinding by lazy {
+        ActivitySignInAndRegistrationBinding.inflate(layoutInflater)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
+        setContentView(bindings.root)
 
         val action : String? = intent.getStringExtra("action")
 
         if (action == "login")
         {
-           binding.loginEmailAddress.visibility = View.VISIBLE
-            binding.loginPassword.visibility = View.VISIBLE
-            binding.LoginButton.visibility =View.VISIBLE
+           bindings.loginEmailAddress.visibility = View.VISIBLE
+            bindings.loginPassword.visibility = View.VISIBLE
+            bindings.LoginButton.visibility =View.VISIBLE
 
-            binding.registerButton.isClickable = false
-            binding.registeruser.isClickable =false
+            bindings.registerButton.isClickable = false
+            bindings.registeruser.isClickable =false
 
-            binding.registerName.visibility = View.GONE
-            binding.registerEmail.visibility = View.GONE
-            binding.registerPassword.visibility = View.GONE
-            binding.cardView.visibility = View.GONE
+            bindings.registerName.visibility = View.GONE
+            bindings.registerEmail.visibility = View.GONE
+            bindings.registerPassword.visibility = View.GONE
+            bindings.cardView.visibility = View.GONE
         }
         else if (action == "register")
         {
-            binding.loginEmailAddress.visibility = View.INVISIBLE
-            binding.loginPassword.visibility = View.INVISIBLE
-            binding.LoginButton.isClickable =false
+            bindings.loginEmailAddress.visibility = View.INVISIBLE
+            bindings.loginPassword.visibility = View.INVISIBLE
+            bindings.LoginButton.isEnabled =false
 
-            binding.registerButton.visibility = View.VISIBLE
-            binding.registeruser.visibility =View.VISIBLE
+            bindings.registerButton.visibility = View.VISIBLE
+            bindings.registeruser.visibility =View.VISIBLE
 
-            binding.registerName.visibility = View.VISIBLE
-            binding.registerEmail.visibility = View.VISIBLE
-            binding.registerPassword.visibility = View.VISIBLE
-            binding.cardView.visibility = View.VISIBLE
+            bindings.registerName.visibility = View.VISIBLE
+            bindings.registerEmail.visibility = View.VISIBLE
+            bindings.registerPassword.visibility = View.VISIBLE
+            bindings.cardView.visibility = View.VISIBLE
         }
     }
 }
