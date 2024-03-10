@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849516776831",
+    "project_id": "vodcast-8b94e",
+    "storage_bucket": "vodcast-8b94e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849516776831:android:866e3d89a484d132c45e4a",
+        "android_client_info": {
+          "package_name": "com.example.vodcast"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5YZWPnNMgMjvS340ArqrrNQcwWgTj2MY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
